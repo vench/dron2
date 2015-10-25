@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dron 2.1</string>
+    <string name="hello">Привет это Дрон 2 =)</string>
+    <string name="mover1">Д 1</string>
+    <string name="mover2">Д 2</string>
+    <string name="mover3">Д 3</string>
+    <string name="mover4">Д 4</string>
+    <string name="make_photo">Сделать фото</string>
+    <string name="ip">IP сервера</string>
+</resources>

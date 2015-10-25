@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:19
+-keep class com.dron.MainActivity { <init>(...); }
+
+# onClick res/layout/main.xml #generated:126
+-keepclassmembers class * { *** onMakePhoto(...); }
+
+# onClick res/layout/main.xml #generated:115
+# onClick res/layout/main.xml #generated:68
+# onClick res/layout/main.xml #generated:83
+# onClick res/layout/main.xml #generated:99
+-keepclassmembers class * { *** overScrollModeMover(...); }
+
