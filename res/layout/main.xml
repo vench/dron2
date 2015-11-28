@@ -50,8 +50,8 @@
         <EditText android:id="@+id/ip"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content" 
-              android:hint="http://vench-master.spb.ru/dron/test.php"
-              android:text="http://vench-master.spb.ru/dron/test.php"
+              android:hint="@string/ip_default"
+              android:text="@string/ip_default"
               android:padding="10dp"/>
     
     

@@ -8,4 +8,5 @@
     <string name="mover4">Д 4</string>
     <string name="make_photo">Сделать фото</string>
     <string name="ip">IP сервера</string>
+    <string name="ip_default">http://dron.haosty.ru/</string>
 </resources>

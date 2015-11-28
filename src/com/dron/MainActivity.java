@@ -60,7 +60,9 @@ public class MainActivity extends Activity implements IDronState ,
      * Делаем фото
      * @param view 
      */
-    public void onMakePhoto(View view) {}
+    public void onMakePhoto(View view) {
+    
+    }
     
     public void overScrollModeMover(View view) {
     }
@@ -90,11 +92,39 @@ public class MainActivity extends Activity implements IDronState ,
         }
         return m;
     }
+    
+    private void updateSeekBarProgress(SeekBar s, int value) {
+        s.setProgress(0); 
+        s.setMax(100);
+        s.setProgress(  value ); 
+    }
+    
+    private void updateSeekBarProgress(SeekBar s, String value) { 
+        updateSeekBarProgress(s, Integer.parseInt(value));
+    }
 
     public void setParams(Map<String, String> params) { 
         final TextView tv = (TextView) findViewById(R.id.log);
-        try {
-            tv.setText(params.get("base"));
+        try {  
+            tv.setText(params.get("base") +  Integer.parseInt( params.get("mover1") ) );
+            
+            if(params.containsKey("mover1")) {
+                final SeekBar m1 = (SeekBar) findViewById(R.id.mover1);
+                updateSeekBarProgress(m1,  params.get("mover1"));  
+            }
+            if(params.containsKey("mover2")) {
+                final SeekBar m2 = (SeekBar) findViewById(R.id.mover2);
+                updateSeekBarProgress(m2,  params.get("mover2"));                
+            }
+            if(params.containsKey("mover3")) {
+                final SeekBar m3 = (SeekBar) findViewById(R.id.mover3);
+                updateSeekBarProgress(m3,  params.get("mover3"));               
+            }
+            if(params.containsKey("mover4")) {
+                final SeekBar m4 = (SeekBar) findViewById(R.id.mover4);
+                updateSeekBarProgress(m4,  params.get("mover4"));               
+            }
+            
         } catch(Exception e) {}
                 
     }
